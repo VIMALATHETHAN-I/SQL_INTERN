@@ -1,0 +1,22 @@
+--inner join---
+select b.customer_name,b.city
+from sales as a
+inner join customer as b
+on a.customer_id=b.customer_id;
+---left join---
+select b.customer_name,b.city
+from sales as a
+left join customer as b
+on a.customer_id=b.customer_id;
+---right join--
+select b.customer_name,b.city
+from sales as a
+right join customer as b
+on a.customer_id=b.customer_id;
+---full outer join--
+select b.customer_name,b.city
+from sales as a
+ full outer join customer as b
+on a.customer_id=b.customer_id;
+
+
